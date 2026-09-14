@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gulnora — Flower Boutique</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="logo">
+        <span class="logo-main">Gulnora</span>
+        <span class="logo-sub">by Hilola</span>
+    </div>
+
+    <nav class="navbar">
+        <a href="#home" data-key="navHome">Bosh sahifa</a>
+        <a href="#flowers" data-key="navFlowers">Gullar</a>
+        <a href="#about" data-key="navAbout">Biz haqimizda</a>
+        <a href="#contact" data-key="navContact">Aloqa</a>
+    </nav>
+
+    <div class="header-right">
+
+        <div class="language">
+            <button class="lang-btn active" data-lang="uz">UZ</button>
+            <button class="lang-btn" data-lang="ru">RU</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+
+        <button class="cart-button" id="cartButton">
+            🛍️
+            <span id="cartCount">0</span>
+        </button>
+
+        <button class="menu-button" id="menuButton">☰</button>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <p class="small-title" data-key="heroSmall">
+            HAR BIR GULDA — BIR HIKOYA
+        </p>
+
+        <h1 data-key="heroTitle">
+            Go‘zallikni<br>
+            <i>gullar orqali</i> his qiling
+        </h1>
+
+        <p class="hero-description" data-key="heroText">
+            Nafis gullar, samimiy tuyg‘ular va unutilmas lahzalar.
+            Siz uchun mehr bilan tanlangan har bir guldasta.
+        </p>
+
+        <a href="#flowers" class="hero-button" data-key="heroButton">
+            Gullarni ko‘rish
+            <span>→</span>
+        </a>
+
+    </div>
+
+    <div class="hero-decoration">
+        <span>✿</span>
+        <span>❀</span>
+        <span>✿</span>
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURES ================= -->
+
+<section class="features">
+
+    <div class="feature">
+        <div class="feature-icon">🌷</div>
+        <div>
+            <h3 data-key="feature1Title">Yangi gullar</h3>
+            <p data-key="feature1Text">Har kuni yangi tanlov</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon">🎁</div>
+        <div>
+            <h3 data-key="feature2Title">Chiroyli qadoq</h3>
+            <p data-key="feature2Text">Har bir detal mehr bilan</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon">🚚</div>
+        <div>
+            <h3 data-key="feature3Title">Tez yetkazib berish</h3>
+            <p data-key="feature3Text">Tuyg‘ularingiz vaqtida yetadi</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon">💗</div>
+        <div>
+            <h3 data-key="feature4Title">Mehr bilan</h3>
+            <p data-key="feature4Text">Siz uchun maxsus yaratiladi</p>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ================= FLOWERS ================= -->
+
+<section class="flowers-section" id="flowers">
+
+    <div class="section-heading">
+
+        <p class="section-label" data-key="flowersLabel">
+            BIZNING TO‘PLAMIMIZ
+        </p>
+
+        <h2 data-key="flowersTitle">
+            Sizga mos <i>guldasta</i>
+        </h2>
+
+        <p data-key="flowersText">
+            Har bir gul — o‘ziga xos tuyg‘u. O‘zingizga yoqqanini tanlang.
+        </p>
+
+    </div>
+
+
+    <div class="filters">
+
+        <button class="filter active" data-filter="all" data-key="filterAll">
+            Barchasi
+        </button>
+
+        <button class="filter" data-filter="romantic" data-key="filterRomantic">
+            Romantik
+        </button>
+
+        <button class="filter" data-filter="classic" data-key="filterClassic">
+            Klassik
+        </button>
+
+        <button class="filter" data-filter="special" data-key="filterSpecial">
+            Maxsus
+        </button>
+
+    </div>
+
+
+    <div class="flower-grid" id="flowerGrid">
+
+        <!-- FLOWER 1 -->
+
+        <article class="flower-card" data-category="romantic">
+
+            <div class="flower-image">
+                <img src="images/rose.png" alt="Royal Roses">
+
+                <span class="flower-tag" data-key="popular">
+                    Mashhur
+                </span>
+
+                <button class="heart-button">♡</button>
+            </div>
+
+            <div class="flower-info">
+
+                <p class="flower-category" data-key="roseCategory">
+                    ROMANTIK
+                </p>
+
+                <h3 data-key="roseName">Royal Roses</h3>
+
+                <p class="flower-description" data-key="roseDescription">
+                    Nafis va samimiy hislar uchun qizil atirgullar.
+                </p>
+
+                <div class="flower-bottom">
+                    <strong>280 000 so‘m</strong>
+
+                    <button class="add-button"
+                            data-name="Royal Roses"
+                            data-price="280000"
+                            data-image="images/rose.jpg"
+                            data-key="add">
+                        + Qo‘shish
+                    </button>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- FLOWER 2 -->
+
+        <article class="flower-card" data-category="romantic">
+
+            <div class="flower-image">
+                <img src="images/tulip.png" alt="Pink Tulips">
+
+                <button class="heart-button">♡</button>
+            </div>
+
+            <div class="flower-info">
+
+                <p class="flower-category" data-key="tulipCategory">
+                    NOZIK
+                </p>
+
+                <h3 data-key="tulipName">Pink Tulips</h3>
+
+                <p class="flower-description" data-key="tulipDescription">
+                    Bahor kayfiyatini olib keluvchi pushti lolalar.
+                </p>
+
+                <div class="flower-bottom">
+                    <strong>220 000 so‘m</strong>
+
+                    <button class="add-button"
+                            data-name="Pink Tulips"
+                            data-price="220000"
+                            data-image="images/tulip.jpg"
+                            data-key="add">
+                        + Qo‘shish
+                    </button>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- FLOWER 3 -->
+
+        <article class="flower-card" data-category="classic">
+
+            <div class="flower-image">
+                <img src="images/sunflower.png" alt="Sunny Flowers">
+
+                <button class="heart-button">♡</button>
+            </div>
+
+            <div class="flower-info">
+
+                <p class="flower-category">
+                    CLASSIC
+                </p>
+
+                <h3 data-key="sunflowerName">Sunny Flowers</h3>
+
+                <p class="flower-description" data-key="sunflowerDescription">
+                    Quvonch va iliqlikni ifodalovchi yorqin gullar.
+                </p>
+
+                <div class="flower-bottom">
+                    <strong>190 000 so‘m</strong>
+
+                    <button class="add-button"
+                            data-name="Sunny Flowers"
+                            data-price="190000"
+                            data-image="images/sunflower.jpg"
+                            data-key="add">
+                        + Qo‘shish
+                    </button>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- FLOWER 4 -->
+
+        <article class="flower-card" data-category="special">
+
+            <div class="flower-image">
+                <img src="images/bouquet.png" alt="Dream Bouquet">
+
+                <span class="flower-tag new" data-key="new">
+                    Yangi
+                </span>
+
+                <button class="heart-button">♡</button>
+            </div>
+
+            <div class="flower-info">
+
+                <p class="flower-category">
+                    PREMIUM
+                </p>
+
+                <h3 data-key="bouquetName">Dream Bouquet</h3>
+
+                <p class="flower-description" data-key="bouquetDescription">
+                    Turli gullarning nafis va zamonaviy kombinatsiyasi.
+                </p>
+
+                <div class="flower-bottom">
+                    <strong>450 000 so‘m</strong>
+
+                    <button class="add-button"
+                            data-name="Dream Bouquet"
+                            data-price="450000"
+                            data-image="images/bouquet.jpg"
+                            data-key="add">
+                        + Qo‘shish
+                    </button>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- FLOWER 5 -->
+
+        <article class="flower-card" data-category="classic">
+
+            <div class="flower-image">
+                <img src="images/lavender.png" alt="Lavender Love">
+
+                <button class="heart-button">♡</button>
+            </div>
+
+            <div class="flower-info">
+
+                <p class="flower-category">
+                    CLASSIC
+                </p>
+
+                <h3 data-key="lavenderName">Lavender Love</h3>
+
+                <p class="flower-description" data-key="lavenderDescription">
+                    Tinchlik va sokinlikni ifodalovchi lavanda.
+                </p>
+
+                <div class="flower-bottom">
+                    <strong>210 000 so‘m</strong>
+
+                    <button class="add-button"
+                            data-name="Lavender Love"
+                            data-price="210000"
+                            data-image="images/lavender.jpg"
+                            data-key="add">
+                        + Qo‘shish
+                    </button>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- FLOWER 6 -->
+
+        <article class="flower-card" data-category="romantic">
+
+            <div class="flower-image">
+                <img src="images/peony.png" alt="Pink Peony">
+
+                <span class="flower-tag" data-key="favorite">
+                    Sevimli
+                </span>
+
+                <button class="heart-button">♡</button>
+            </div>
+
+            <div class="flower-info">
+
+                <p class="flower-category">
+                    ROMANTIK
+                </p>
+
+                <h3 data-key="peonyName">Pink Peony</h3>
+
+                <p class="flower-description" data-key="peonyDescription">
+                    Nafis ko‘rinish va yumshoq ranglar uyg‘unligi.
+                </p>
+
+                <div class="flower-bottom">
+                    <strong>350 000 so‘m</strong>
+
+                    <button class="add-button"
+                            data-name="Pink Peony"
+                            data-price="350000"
+                            data-image="images/peony.jpg"
+                            data-key="add">
+                        + Qo‘shish
+                    </button>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- FLOWER 7 -->
+
+        <article class="flower-card" data-category="special">
+
+            <div class="flower-image">
+                <img src="images/orchid.png" alt="White Orchid">
+
+                <button class="heart-button">♡</button>
+            </div>
+
+            <div class="flower-info">
+
+                <p class="flower-category">
+                    PREMIUM
+                </p>
+
+                <h3 data-key="orchidName">White Orchid</h3>
+
+                <p class="flower-description" data-key="orchidDescription">
+                    Nafosat va o‘ziga xoslikni sevuvchilar uchun.
+                </p>
+
+                <div class="flower-bottom">
+                    <strong>390 000 so‘m</strong>
+
+                    <button class="add-button"
+                            data-name="White Orchid"
+                            data-price="390000"
+                            data-image="images/orchid.jpg"
+                            data-key="add">
+                        + Qo‘shish
+                    </button>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- FLOWER 8 -->
+
+        <article class="flower-card" data-category="special">
+
+            <div class="flower-image">
+                <img src="images/wedding.png" alt="Wedding Bouquet">
+
+                <span class="flower-tag new" data-key="special">
+                    Maxsus
+                </span>
+
+                <button class="heart-button">♡</button>
+            </div>
+
+            <div class="flower-info">
+
+                <p class="flower-category">
+                    WEDDING
+                </p>
+
+                <h3 data-key="weddingName">Wedding Dream</h3>
+
+                <p class="flower-description" data-key="weddingDescription">
+                    Eng muhim kuningiz uchun yaratilgan maxsus guldasta.
+                </p>
+
+                <div class="flower-bottom">
+                    <strong>520 000 so‘m</strong>
+
+                    <button class="add-button"
+                            data-name="Wedding Dream"
+                            data-price="520000"
+                            data-image="images/wedding.jpg"
+                            data-key="add">
+                        + Qo‘shish
+                    </button>
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about-section" id="about">
+
+    <div class="about-image">
+        <img src="images/bouquet.png" alt="Gulnora flowers">
+    </div>
+
+    <div class="about-content">
+
+        <p class="section-label" data-key="aboutLabel">
+            BIZ HAQIMIZDA
+        </p>
+
+        <h2 data-key="aboutTitle">
+            Gullar shunchaki gul emas.
+            <i>Ular — hislar.</i>
+        </h2>
+
+        <p data-key="aboutText1">
+            Gulnora — oddiy gul do‘koni emas. Biz insonlar ayta olmaydigan
+            tuyg‘ularni gullar orqali ifodalashga yordam beramiz.
+        </p>
+
+        <p data-key="aboutText2">
+            Har bir guldastani tanlashda uning rangi, shakli va kayfiyatiga
+            alohida e’tibor beramiz. Chunki bizningcha, eng chiroyli sovg‘a —
+            samimiyat bilan tanlangan sovg‘adir.
+        </p>
+
+        <div class="about-signature">
+            <span>With love,</span>
+            <strong>Hilola</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= QUOTE ================= -->
+
+<section class="quote-section">
+
+    <div class="quote-flower">✿</div>
+
+    <blockquote data-key="quote">
+        “Ba’zan bir dasta gul minglab so‘zlardan ko‘ra ko‘proq narsani aytadi.”
+    </blockquote>
+
+    <p>— Gulnora by Hilola</p>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section" id="contact">
+
+    <div class="contact-content">
+
+        <p class="section-label" data-key="contactLabel">
+            BIZ BILAN BOG‘LANING
+        </p>
+
+        <h2 data-key="contactTitle">
+            Kimdir uchun <i>quvonch</i> yuboring
+        </h2>
+
+        <p data-key="contactText">
+            Savollaringiz yoki maxsus buyurtmangiz bo‘lsa,
+            biz bilan bog‘laning.
+        </p>
+
+        <div class="contact-info">
+
+            <div>
+                <span>📍</span>
+                <p>
+                    <strong data-key="addressTitle">Manzil</strong>
+                    <br>
+                    Tashkent, Uzbekistan
+                </p>
+            </div>
+
+            <div>
+                <span>📞</span>
+                <p>
+                    <strong data-key="phoneTitle">Telefon</strong>
+                    <br>
+                    +998 90 123 45 67
+                </p>
+            </div>
+
+            <div>
+                <span>✉️</span>
+                <p>
+                    <strong>Email</strong>
+                    <br>
+                    hello@gulnora.uz
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <form class="contact-form" id="contactForm">
+
+        <input
+            type="text"
+            placeholder="Ismingiz"
+            data-placeholder="namePlaceholder"
+            required
+        >
+
+        <input
+            type="email"
+            placeholder="Email manzilingiz"
+            data-placeholder="emailPlaceholder"
+            required
+        >
+
+        <textarea
+            placeholder="Xabaringiz..."
+            data-placeholder="messagePlaceholder"
+            required
+        ></textarea>
+
+        <button type="submit" data-key="sendButton">
+            Xabar yuborish →
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        <span>Gulnora</span>
+        <small>by Hilola</small>
+    </div>
+
+    <p data-key="footerText">
+        Gullar bilan yaxshi lahzalarni yanada chiroyli qiling.
+    </p>
+
+    <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">Telegram</a>
+    </div>
+
+    <div class="copyright">
+        © 2026 Gulnora by Hilola. <span data-key="rights">Barcha huquqlar himoyalangan.</span>
+    </div>
+
+</footer>
+
+
+<!-- ================= CART SIDEBAR ================= -->
+
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<aside class="cart-sidebar" id="cartSidebar">
+
+    <div class="cart-header">
+
+        <h2 data-key="cartTitle">Savat</h2>
+
+        <button id="closeCart">×</button>
+
+    </div>
+
+    <div class="cart-items" id="cartItems">
+
+        <div class="empty-cart">
+
+            <div>🌸</div>
+
+            <p data-key="emptyCart">
+                Savatingiz hozircha bo‘sh.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="cart-footer">
+
+        <div class="total">
+            <span data-key="total">Jami</span>
+            <strong id="cartTotal">0 so‘m</strong>
+        </div>
+
+        <button class="checkout-button" id="checkoutButton" data-key="checkout">
+            Buyurtma berish
+        </button>
+
+    </div>
+
+</aside>
+
+
+<!-- ================= TOAST ================= -->
+
+<div class="toast" id="toast">
+    <span>✓</span>
+    <p data-key="addedMessage">Mahsulot savatga qo‘shildi</p>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
